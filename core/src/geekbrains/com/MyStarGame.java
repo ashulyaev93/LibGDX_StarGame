@@ -48,7 +48,7 @@ public class MyStarGame extends ApplicationAdapter {
 
 		batch.setProjectionMatrix(camera.combined);
 		batch.begin();
-		batch.draw(shipImg, klipartz.x, klipartz.y); //Gdx.graphics.getWidth(), Gdx.graphics.getWidth()
+		batch.draw(shipImg, klipartz.x, klipartz.y);
 		batch.end();
 
 		if(Gdx.input.isTouched()){
