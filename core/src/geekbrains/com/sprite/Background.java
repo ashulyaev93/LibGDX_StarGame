@@ -1,8 +1,10 @@
-package geekbrains.com;
+package geekbrains.com.sprite;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+
+import geekbrains.com.Hero;
 
 public class Background {
     class Star {
@@ -39,7 +41,7 @@ public class Background {
         }
     }
     public void render (SpriteBatch batch) {
-        //batch.draw(texture, 0 , 0 );
+        batch.draw(texture, 0 , 0 );
         try{
             for (Star s : stars) {
                 batch.draw(textureStar, s.position.x - 8 , s.position.y - 8 , 8 , 8 , 16 ,16 , s.scl, s.scl, 0 , 0 , 0 , 16 , 16 , false , false );
