@@ -15,24 +15,26 @@ public abstract class BaseButton extends Sprite {
         super(region);
     }
 
-    @Override
+
     public boolean touchDown(Vector2 touch, int pointer, int button) {
         if (pressed || !isMe(touch)) {
             return false;
         }
         this.pointer = pointer;
         pressed = true;
-        scale = PRESS_SCALE;
+        float scale = PRESS_SCALE;
         return false;
     }
 
-    @Override
+    protected abstract boolean isMe(Vector2 touch);
+
+
     public boolean touchUp(Vector2 touch, int pointer, int button) {
         if (this.pointer != pointer || !pressed) {
             return false;
         }
         pressed = false;
-        scale = 1f;
+        float scale = 1f;
         if (isMe(touch)) {
             action();
             return false;

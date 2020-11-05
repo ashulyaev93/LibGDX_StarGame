@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.Vector2;
 
-import geekbrains.com.Background;
+import geekbrains.com.sprite.Background;
 import geekbrains.com.Base.BaseScreen;
 import geekbrains.com.math.Rect;
 import geekbrains.com.pool.BulletPool;

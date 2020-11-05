@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 
+import geekbrains.com.Base.Ship;
 import geekbrains.com.math.Rect;
 
 
@@ -13,14 +14,16 @@ public class Bullet extends Sprite {
     private Vector2 v;
     private int damage;
     private Sprite owner;
+    private TextureRegion[] regions;
+    private EnemyShip pos;
 
     public Bullet() {
         v = new Vector2();
-        regions = new TextureRegion[1];
+        TextureRegion[] regions = new TextureRegion[1];
     }
 
     public void set(
-            Sprite owner,
+            Ship owner,
             TextureRegion region,
             Vector2 pos,
             Vector2 v,
@@ -28,22 +31,21 @@ public class Bullet extends Sprite {
             int damage,
             float height
     ) {
-        this.owner = owner;
+
         this.regions[0] = region;
         this.pos.set(pos);
         this.v.set(v);
         this.worldBounds = worldBounds;
         this.damage = damage;
-        setHeightProportion(height);
+
     }
 
-    @Override
-    public void update(float delta) {
-        this.pos.mulAdd(v, delta);
-        if (isOutside(worldBounds)) {
-            destroy();
-        }
-    }
+//    public void update(float delta) {
+//        this.pos.mulAdd(v, delta);
+//        if (isOutside(worldBounds)) {
+//            destroy();
+//        }
+//    }
 
     public int getDamage() {
         return damage;
