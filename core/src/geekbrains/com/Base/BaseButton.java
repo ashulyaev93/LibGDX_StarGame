@@ -1,0 +1,46 @@
+package geekbrains.com.Base;
+
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Vector2;
+
+public abstract class BaseButton extends Sprite {
+
+    private static final float PRESS_SCALE = 0.9f;
+
+    private int pointer;
+    private boolean pressed;
+
+    public BaseButton(TextureRegion region) {
+        super(region);
+    }
+
+
+    public boolean touchDown(Vector2 touch, int pointer, int button) {
+        if (pressed || !isMe(touch)) {
+            return false;
+        }
+        this.pointer = pointer;
+        pressed = true;
+        float scale = PRESS_SCALE;
+        return false;
+    }
+
+    protected abstract boolean isMe(Vector2 touch);
+
+
+    public boolean touchUp(Vector2 touch, int pointer, int button) {
+        if (this.pointer != pointer || !pressed) {
+            return false;
+        }
+        pressed = false;
+        float scale = 1f;
+        if (isMe(touch)) {
+            action();
+            return false;
+        }
+        return false;
+    }
+
+    public abstract void action();
+}
