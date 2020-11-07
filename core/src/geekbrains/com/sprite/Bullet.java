@@ -40,12 +40,12 @@ public class Bullet extends Sprite {
 
     }
 
-//    public void update(float delta) {
-//        this.pos.mulAdd(v, delta);
-//        if (isOutside(worldBounds)) {
-//            destroy();
-//        }
-//    }
+    public void update(float delta) {
+        this.pos.mulAdd(v, delta);
+        if (isOutside(worldBounds)) {
+            destroy();
+        }
+    }
 
     public int getDamage() {
         return damage;
