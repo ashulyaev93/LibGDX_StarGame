@@ -4,7 +4,7 @@ import geekbrains.com.Base.SpritesPool;
 import geekbrains.com.math.Rect;
 import geekbrains.com.sprite.EnemyShip;
 
-
+//homework7
 public class EnemyShipPool extends SpritesPool<EnemyShip> {
 
     private BulletPool bulletPool;

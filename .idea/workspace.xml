@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f649806-56ef-4a28-b900-de8debab7243" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/geekbrains/com/pool/ExplosionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/Explosion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/geekbrains/com/pool/EnemyShipPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/geekbrains/com/pool/EnemyShipPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/geekbrains/com/pool/ExplosionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/geekbrains/com/pool/ExplosionPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/EnemyShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/EnemyShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/Explosion.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/geekbrains/com/sprite/Explosion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

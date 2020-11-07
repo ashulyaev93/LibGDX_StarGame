@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import geekbrains.com.Base.SpritesPool;
 import geekbrains.com.sprite.Explosion;
 
-
+//homework7
 public class ExplosionPool extends SpritesPool<Explosion> {
 
     private TextureAtlas atlas;

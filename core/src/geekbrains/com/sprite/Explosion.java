@@ -5,7 +5,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import geekbrains.com.Base.Sprite;
 
-
+//homework7
 public class Explosion extends Sprite {
 
     private static final float ANIMATE_INTERVAL = 0.01f;
