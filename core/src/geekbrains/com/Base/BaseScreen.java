@@ -12,7 +12,7 @@ import com.badlogic.gdx.math.Vector2;
 import geekbrains.com.math.MatrixUtils;
 import geekbrains.com.math.Rect;
 
-
+//homework6
 public abstract class BaseScreen implements Screen, InputProcessor {
 
     protected SpriteBatch batch;

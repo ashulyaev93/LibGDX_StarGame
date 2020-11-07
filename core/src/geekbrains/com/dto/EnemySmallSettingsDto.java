@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 import geekbrains.com.Base.EnemySettingsDto;
 import geekbrains.com.utils.Regions;
 
-
+//homework6
 public class EnemySmallSettingsDto extends EnemySettingsDto {
 
     private static final float ENEMY_SMALL_HEIGHT = 0.1f;
