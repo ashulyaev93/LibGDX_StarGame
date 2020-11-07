@@ -12,7 +12,7 @@ import geekbrains.com.math.Rnd;
 import geekbrains.com.pool.EnemyShipPool;
 import geekbrains.com.sprite.EnemyShip;
 
-
+//homework6
 public class EnemyEmitter {
 
     private static final float GENERATE_INTERVAL = 4f;
