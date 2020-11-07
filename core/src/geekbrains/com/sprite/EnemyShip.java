@@ -6,7 +6,7 @@ import geekbrains.com.math.Rect;
 import geekbrains.com.pool.BulletPool;
 import geekbrains.com.pool.ExplosionPool;
 
-
+//homework7
 public class EnemyShip extends Ship {
 
     private static final float START_V_Y = -0.3f;
