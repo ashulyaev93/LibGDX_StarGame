@@ -4,9 +4,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 
-import geekbrains.com.sprite.Hero;
+import geekbrains.com.math.Rect;
 
 public class Background {
+    public void resize(Rect worldBounds) {
+    }
+
+    public void draw(SpriteBatch batch) {
+    }
+
     class Star {
         
         Vector2 position;
@@ -32,7 +38,7 @@ public class Background {
     Texture texture;
     Texture textureStar;
     Star[] stars;
-    public Background () {
+    public Background(Texture bg) {
         texture = new Texture( "bg.png" );
         //textureStar = new Texture( "star16.png" );
         stars = new Star[ 250 ];

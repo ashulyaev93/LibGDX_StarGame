@@ -8,7 +8,6 @@ import com.badlogic.gdx.math.Vector2;
 import geekbrains.com.Base.EnemySettingsDto;
 import geekbrains.com.utils.Regions;
 
-//homework6
 public class EnemyBigSettingsDto extends EnemySettingsDto {
 
     private static final float ENEMY_BIG_HEIGHT = 0.2f;
@@ -29,5 +28,10 @@ public class EnemyBigSettingsDto extends EnemySettingsDto {
         setReloadInterval(ENEMY_BIG_RELOAD_INTERVAL);
         setHeight(ENEMY_BIG_HEIGHT);
         setHp(ENEMY_BIG_HP);
+    }
+
+    @Override
+    public void setDamageForLevel(int level) {
+        setDamage(ENEMY_BIG_DAMAGE * level);
     }
 }
