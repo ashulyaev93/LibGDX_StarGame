@@ -10,7 +10,7 @@ import geekbrains.com.math.Rnd;
 
 public class Star extends Sprite {
 
-    private final Vector2 v;
+    protected final Vector2 v;
     private Rect worldBounds;
 
     public Star(TextureAtlas atlas) {
@@ -22,17 +22,21 @@ public class Star extends Sprite {
     private void setHeightProportion(float nextFloat) {
     }
 
-
-    public void resize(Rect worldBounds) {
-        this.worldBounds = worldBounds;
-        float x = Rnd.nextFloat(worldBounds.getLeft(), worldBounds.getRight());
-        float y = Rnd.nextFloat(worldBounds.getBottom(), worldBounds.getTop());
+//    @Override
+//    public void resize(Rect worldBounds) {
+//        this.worldBounds = worldBounds;
+//        float x = Rnd.nextFloat(worldBounds.getLeft(), worldBounds.getRight());
+//        float y = Rnd.nextFloat(worldBounds.getBottom(), worldBounds.getTop());
 //        pos.set(x, y);
-    }
-
-
+//    }
+//
+//    @Override
 //    public void update(float delta) {
 //        pos.mulAdd(v, delta);
+//        checkBounds();
+//    }
+//
+//    protected void checkBounds() {
 //        if (getRight() < worldBounds.getLeft()) {
 //            setLeft(worldBounds.getRight());
 //        }

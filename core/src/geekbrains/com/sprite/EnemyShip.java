@@ -1,7 +1,8 @@
 package geekbrains.com.sprite;
 
+import com.badlogic.gdx.math.Vector2;
+
 import geekbrains.com.Base.Ship;
-import geekbrains.com.Base.EnemySettingsDto;
 import geekbrains.com.math.Rect;
 import geekbrains.com.pool.BulletPool;
 import geekbrains.com.pool.ExplosionPool;
@@ -32,7 +33,7 @@ public class EnemyShip extends Ship {
         }
     }
 
-    public void set(EnemySettingsDto settings) {
+    public void set(Vector2 settings) {
         this.regions = settings.getRegions();
         this.v0.set(settings.getV0());
         this.bulletRegion = settings.getBulletRegion();
@@ -47,7 +48,7 @@ public class EnemyShip extends Ship {
         this.reloadTimer = 0f;
     }
 
-    public boolean isBulletCollision(Rect bullet) {
+    public boolean isBulletCollision(Bullet bullet) {
         return !(
                 bullet.getRight() < getLeft()
                         || bullet.getLeft() > getRight()
